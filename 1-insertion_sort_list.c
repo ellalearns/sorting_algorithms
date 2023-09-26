@@ -39,12 +39,10 @@ void insertion_sort_list(listint_t **list)
             prevNode = currentNode->prev;
             if (currentNode->n < prevNode->n)
             {
-                listint_t temp1 = prevNode->next;
-                listint_t temp2 = prevNode->prev;
-                listint_t temp3 = currentNode->next;
-                listint_t temp4 = currentNode->prev;
-                listint_t temp5 = currentNode->next->prev;
-                listint_t temp6 = prevNode->prev->next;
+                listint_t *temp2 = prevNode->prev;
+                listint_t *temp3 = currentNode->next;
+                listint_t *temp5 = currentNode->next->prev;
+                listint_t *temp6 = prevNode->prev->next;
 
                 prevNode->next = temp5;
                 prevNode->prev = temp3;

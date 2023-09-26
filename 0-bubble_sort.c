@@ -15,7 +15,7 @@ void bubble_sort(int *array, size_t size)
     {
         while (array && was_sort > 0)
         {
-            int ind = 1;
+            size_t ind = 1;
             int highest_int = 0;
             was_sort = 0;
 
@@ -30,7 +30,7 @@ void bubble_sort(int *array, size_t size)
                     array[ind] = temp;
 
                     was_sort += 1;
-                    print_array(array, size)
+                    print_array(array, size);
                 }
 
                 if (temp > highest_int)
