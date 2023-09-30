@@ -27,9 +27,9 @@ if (array[mIndex] < tmp1)
 tmp2 = array[mIndex];
 array[mIndex] = tmp1;
 tmp1 = tmp2;
+print_array(array, size);
 }
 mIndex++;
-print_array(array, size);
 }
 
 array[cIndex] = tmp1;
