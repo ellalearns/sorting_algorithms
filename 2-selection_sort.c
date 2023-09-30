@@ -15,8 +15,8 @@ void selection_sort(int *array, size_t size)
     {
         while (array && cIndex < listlen)
         {
-            size_t tmp1 = array[cIndex];
-            size_t tmp2 = 0;
+            int tmp1 = array[cIndex];
+            int tmp2 = 0;
             mIndex = cIndex + 1;
 
             while (mIndex < listlen)
